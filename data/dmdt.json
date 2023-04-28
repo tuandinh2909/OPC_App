@@ -1,0 +1,82 @@
+[
+   {
+      "Ma_Dt":"NV",
+      "Dia_Chi":"",
+      "Ten_Dt":"NHÂN VIÊN"
+   },
+   {
+      "Ma_Dt":"NCC",
+      "Dia_Chi":"",
+      "Ten_Dt":"NHÀ CUNG CẤP"
+   },
+   {
+      "Ma_Dt":"BV-2N201-0001",
+      "Dia_Chi":"82A Ngô Sỹ Liên-Phường Đức Thắng-TP.Phan Thiết-Tỉnh Bình Thuận",
+      "Ten_Dt":"BỆNH VIỆN TÂM PHÚC"
+   },
+   {
+      "Ma_Dt":"BV-2N201-0002",
+      "Dia_Chi":"235 Trần Phú-Phường Phú Trinh-TP.Phan Thiết-Tỉnh Bình Thuận",
+      "Ten_Dt":"CÔNG TY TNHH BỆNH VIỆN AN PHƯỚC"
+   },
+   {
+      "Ma_Dt":"BV-2N201-0003",
+      "Dia_Chi":"",
+      "Ten_Dt":"TRUNG TÂM CSSK SINH SẢN"
+   },
+   {
+      "Ma_Dt":"BV-2N201-0004",
+      "Dia_Chi":"10 Hải Thượng Lãn Ông-Phường Phú Trinh-TP.Phan Thiết-Tỉnh Bình Thuận",
+      "Ten_Dt":"TRUNG TÂM CSSK CÁN BỘ"
+   },
+   {
+      "Ma_Dt":"BV-2N201-0005",
+      "Dia_Chi":"SỐ 02 - THỦ KHOA HUÂN - BÌNH HƯNG - PHAN THIẾT - TỈNH BÌNH THUẬN",
+      "Ten_Dt":"BCH QUÂN SỰ TỈNH"
+   },
+   {
+      "Ma_Dt":"BV-2N201-0006",
+      "Dia_Chi":"---",
+      "Ten_Dt":"CÔNG TY TNHH COLUMBIA ASIA BÌNH DƯƠNG"
+   },
+   {
+      "Ma_Dt":"BV-2N201-0007",
+      "Dia_Chi":"Khu phố 4B-TT. Dầu Tiếng-Huyện Dầu Tiếng-Tỉnh Bình Dương",
+      "Ten_Dt":"BỆNH VIỆN ĐA KHOA CAO SU DẦU TIẾNG"
+   },
+   {
+      "Ma_Dt":"BV-2N201-0008",
+      "Dia_Chi":"Đường TC3-Tổ 6-Khu phố 3-Phường Mỹ Phước-TX.Bến Cát-Tỉnh Bình Dương",
+      "Ten_Dt":"CTY CP BỆNH VIỆN MỸ PHƯỚC"
+   },
+   {
+      "Ma_Dt":"BV-2N201-0009",
+      "Dia_Chi":"Số 45, Đường Hồ Văn Cống, Khu phố 4, Phường Tương Bình Hiệp, TP. Thủ Dầu Một, tỉnh Bình Dương",
+      "Ten_Dt":"CÔNG TY CỔ PHẦN BỆNH VIỆN VẠN PHÚC"
+   },
+   {
+      "Ma_Dt":"PK-2N201-0051",
+      "Dia_Chi":"24 Phạm Ngũ Lão-Phường Hiệp Thành-TP.Thủ Dầu Một-Tỉnh Bình Dương",
+      "Ten_Dt":"CÔNG TY TNHH PKĐK BẠCH ĐẰNG"
+   },
+   {
+      "Ma_Dt":"PK-2N201-0049",
+      "Dia_Chi":"81 Đường Phú Lợi-Phường Phú Lợi-TP.Thủ Dầu Một-Tỉnh Bình Dương",
+      "Ten_Dt":"CÔNG TY TNHH 1 THÀNH VIÊN NHI THÀNH PHỐ"
+   },
+   {
+      "Ma_Dt":"BV-2N201-0012",
+      "Dia_Chi":"đường Phạm Văn Xuyên, Khu phố 6-Phường 3-TP.Tây Ninh-Tỉnh Tây Ninh",
+      "Ten_Dt":"PHÒNG HẬU CẦN CA.TỈNH TÂY NINH"
+   },
+   {
+      "Ma_Dt":"BV-2N201-0013",
+      "Dia_Chi":"Số 03 Văn Công Khai-Phường Phú Cường-TP.Thủ Dầu Một-Tỉnh Bình Dương",
+      "Ten_Dt":"TRUNG TÂM Y TẾ THÀNH PHỐ THỦ DẦU MỘT"
+   },
+   {
+      "Ma_Dt":"BV-2N201-0014",
+      "Dia_Chi":"quốc lộ 14-Phường Tiến Thành-TP.Đồng Xoài-Tỉnh Bình Phước",
+      "Ten_Dt":"BỆNH VIỆN ĐA KHOA TỈNH BÌNH PHƯỚC"
+   }
+]

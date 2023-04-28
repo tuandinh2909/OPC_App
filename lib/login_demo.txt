@@ -1,0 +1,181 @@
+import 'dart:convert';
+import 'package:opc_app_main/main_screen.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'package:flutter/material.dart';
+
+class LoginScreen extends StatefulWidget {
+  @override
+  _LoginScreenState createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen> {
+  final String url = "http://118.69.225.144/api/User";
+  late List data;
+  final _usernameController = TextEditingController();
+  final _passwordController = TextEditingController();
+  final _maDvcsController = TextEditingController();
+  @override
+  void initState() {
+    super.initState();
+    data = [];
+    this.getJsonData();
+  }
+
+  Future<String> getJsonData() async {
+    var response = await http.get(
+        // Encoding the url in case of there are any spaces
+        Uri.parse(Uri.encodeFull(url)),
+        // only accepting json respond
+        headers: {"Accept": "application/json"});
+    print(response.body);
+    setState(() {
+      final convertDataToJson = jsonDecode(response.body);
+      data = convertDataToJson;
+    });
+    return "Success";
+  }
+
+  Future<void> _login() async {
+    String username = _usernameController.text.toLowerCase();
+    String password = _passwordController.text.toLowerCase();
+    String maDvcs = _maDvcsController.text.toLowerCase();
+    String? maCbNv;
+    for (int i = 0; i < data.length; i++) {
+      if (data[i] != null &&
+          data[i]['tendangnhap'].toLowerCase() == username &&
+          data[i]['matkhau'].toLowerCase() == password &&
+          data[i]['ma_Dvcs'].toLowerCase() == maDvcs) {
+        maCbNv = data[i]['ma_CbNv'];
+        print(maCbNv);
+        SharedPreferences prefs = await SharedPreferences.getInstance();
+        prefs.setString('maCbNv', maCbNv!);
+
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => HomePageMain()));
+        return;
+      } else {
+        showDialog(
+            context: context,
+            builder: (BuildContext context) {
+              return AlertDialog(
+                title: Text('Lỗi'),
+                content: Text('Đăng nhập thất bại! Vui lòng thử lại'),
+                actions: [
+                  OutlinedButton(
+                    child: Text('OK'),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => LoginScreen()));
+                    },
+                  ),
+                ],
+              );
+            });
+      }
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    List<DropdownMenuItem> sortedData = List<DropdownMenuItem>.from(
+        Set<String>.from(data
+                .where((item) => item['ma_Dvcs'].contains("A"))
+                .map((item) => item['ma_Dvcs']))
+            .toList()
+            .map((item) => DropdownMenuItem(
+                  value: item,
+                  child: Text(
+                    item,
+                    style: TextStyle(color: Colors.black),
+                  ),
+                ))
+            .toList());
+    sortedData.sort((a, b) => a.value.compareTo(b.value));
+    return Scaffold(
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("images/background_login.png"),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Center(
+          child: Container(
+            width: 300,
+            padding: EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: Colors.white.withOpacity(0.7),
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                TextField(
+                  controller: _usernameController,
+                  style: TextStyle(color: Colors.black),
+                  decoration: InputDecoration(
+                    labelText: "Username",
+                    labelStyle: TextStyle(color: Colors.black),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.grey),
+                    ),
+                    enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.grey),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 16),
+                TextField(
+                  controller: _passwordController,
+                  obscureText: true,
+                  style: TextStyle(color: Colors.black),
+                  decoration: InputDecoration(
+                    labelText: "Password",
+                    labelStyle: TextStyle(color: Colors.black),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.grey),
+                    ),
+                    enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.grey),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 16),
+                DropdownButtonFormField(
+                  items: sortedData,
+                  onChanged: (value) {
+                    _maDvcsController.text = value.toString();
+                  },
+                  decoration: InputDecoration(
+                    labelText: "Mã ĐVCS",
+                    labelStyle: TextStyle(color: Colors.black),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.grey),
+                    ),
+                    enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.grey),
+                    ),
+                  ),
+                  dropdownColor: Colors.white,
+                  style: TextStyle(
+                      color: Colors.black), // thiết lập màu chữ của nút bấm
+                  iconEnabledColor:
+                      Colors.black, // thiết lập màu của mũi tên xuống
+                ),
+                SizedBox(height: 16),
+                OutlinedButton(
+                  onPressed: _login,
+                  child: Text("Login", style: TextStyle(color: Colors.black)),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}

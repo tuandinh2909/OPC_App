@@ -1,0 +1,122 @@
+[
+   {
+      "ma_vt":"HH04-0001",
+      "Ten_Vt_DmVt":"ETHANOL 99,5% Dùng ngoài (Chai 1Lít)",
+      "gia":0.00000,
+      "Thue_Gtgt":5.0000
+   },
+   {
+      "ma_vt":"HH04-0002",
+      "Ten_Vt_DmVt":"ALCOOL 70 độ 60ml",
+      "gia":0.00000,
+      "Thue_Gtgt":5.0000
+   },
+   {
+      "ma_vt":"HH04-0003",
+      "Ten_Vt_DmVt":"Dung dịch MILIAN 18ml",
+      "gia":0.00000,
+      "Thue_Gtgt":5.0000
+   },
+   {
+      "ma_vt":"HH04-0007",
+      "Ten_Vt_DmVt":"ALCOOL 90 độ 60ml trắng",
+      "gia":0.00000,
+      "Thue_Gtgt":5.0000
+   },
+   {
+      "ma_vt":"HH04-0008",
+      "Ten_Vt_DmVt":"ALCOOL 90 độ 60ml xanh",
+      "gia":0.00000,
+      "Thue_Gtgt":5.0000
+   },
+   {
+      "ma_vt":"HH04-0009",
+      "Ten_Vt_DmVt":"Nước oxy già 10tt (3%) 60ml",
+      "gia":0.00000,
+      "Thue_Gtgt":5.0000
+   },
+   {
+      "ma_vt":"HH04-0010",
+      "Ten_Vt_DmVt":"ETHANOL tinh luyện 90% (Chai 1Lít)",
+      "gia":0.00000,
+      "Thue_Gtgt":5.0000
+   },
+   {
+      "ma_vt":"HH04-0011",
+      "Ten_Vt_DmVt":"ETHANOL tinh luyện 70% (Chai 1Lít)",
+      "gia":0.00000,
+      "Thue_Gtgt":5.0000
+   },
+   {
+      "ma_vt":"TP02-0001",
+      "Ten_Vt_DmVt":"Hoàn bát vị BỔ THẬN DƯƠNG (Chai 240HC)",
+      "gia":40000.00000,
+      "Thue_Gtgt":5.0000
+   },
+   {
+      "ma_vt":"TP02-0002",
+      "Ten_Vt_DmVt":"Hoàn lục vị BỔ THẬN ÂM (Chai 240HC)",
+      "gia":40000.00000,
+      "Thue_Gtgt":5.0000
+   },
+   {
+      "ma_vt":"TP02-0003",
+      "Ten_Vt_DmVt":"CABOVIS Viên thanh nhiệt giải độc (Hộp 50NC)",
+      "gia":32000.00000,
+      "Thue_Gtgt":5.0000
+   },
+   {
+      "ma_vt":"TP02-0004",
+      "Ten_Vt_DmVt":"CÙ LÀ ĐẠI BÀNG 7,5g",
+      "gia":6500.00000,
+      "Thue_Gtgt":5.0000
+   },
+   {
+      "ma_vt":"TP02-0006",
+      "Ten_Vt_DmVt":"CAO ÍCH MẪU 100ml",
+      "gia":19000.00000,
+      "Thue_Gtgt":5.0000
+   },
+   {
+      "ma_vt":"TP02-0007",
+      "Ten_Vt_DmVt":"CAO ÍCH MẪU 180ml",
+      "gia":28000.00000,
+      "Thue_Gtgt":5.0000
+   },
+   {
+      "ma_vt":"TP02-0009",
+      "Ten_Vt_DmVt":"CAO SAO VÀNG 10g",
+      "gia":6500.00000,
+      "Thue_Gtgt":5.0000
+   },
+   {
+      "ma_vt":"TP02-0010",
+      "Ten_Vt_DmVt":"CAO SAO VÀNG 4g",
+      "gia":3500.00000,
+      "Thue_Gtgt":5.0000
+   },
+   {
+      "ma_vt":"TP02-0012",
+      "Ten_Vt_DmVt":"CAO SAO VÀNG 20g",
+      "gia":30000.00000,
+      "Thue_Gtgt":5.0000
+   },
+   {
+      "ma_vt":"TP02-0013",
+      "Ten_Vt_DmVt":"CHOLAPAN viên mật nghệ (Hộp 50BP)",
+      "gia":32000.00000,
+      "Thue_Gtgt":5.0000
+   },
+   {
+      "ma_vt":"TP02-0015",
+      "Ten_Vt_DmVt":"CỒN XOA BÓP 90ml",
+      "gia":20000.00000,
+      "Thue_Gtgt":5.0000
+   },
+   {
+      "ma_vt":"TP02-0016",
+      "Ten_Vt_DmVt":"CỒN XOA BÓP 60ml",
+      "gia":30000.00000,
+      "Thue_Gtgt":5.0000
+   }
+]
